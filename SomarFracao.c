@@ -1,3 +1,5 @@
+//Beecrowd 2443
+
 #include <stdio.h>
 
 int mdc(int m, int n);
