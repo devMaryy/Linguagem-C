@@ -1,3 +1,5 @@
+//Beecrowd 1247
+
 #include <stdio.h>
 #include <math.h>
 
