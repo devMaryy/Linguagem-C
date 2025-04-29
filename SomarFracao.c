@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int mdc(int m, int n);
+
+int main(void) 
+{
+    int a, b, c, d, numerador, denominador, divisor;
+    printf("Digite os 4 numeros: ");
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+
+    // Soma das frações: (a/b) + (c/d) = (a*d + c*b) / (b*d)
+    numerador = a * d + c * b;
+    denominador = b * d;
+
+    // Simplificar a fração dividindo pelo MDC
+    divisor = mdc(numerador, denominador);
+    numerador /= divisor;
+    denominador /= divisor;
+
+    // Saída: numerador e denominador da fração irredutível
+    printf("%d %d\n", numerador, denominador);
+
+    return 0;
+}
+
+// Função para calcular o Máximo Divisor Comum (MDC)
+int mdc(int m, int n)
+{	if (m < 0) m = -m;
+	if (n < 0) n = -n;
+	
+	if (m % n == 0)
+		return n;
+	else
+		return mdc(n, m % n);
+}
