@@ -14,7 +14,6 @@ int main (void)
     int verificando_primo = peso_combustivel;
     long long velocidade = 0;
 
-    // Soma os 10 primeiros primos ≥ peso_combustivel
     while (cont_primos < 10) 
     {
         if (eh_primo(verificando_primo)) 
@@ -25,7 +24,6 @@ int main (void)
         verificando_primo++;
     }
 
-    // Calcular tempo
     long long distancia_km = 60000000LL; // 60 milhões de km
     long long tempo_horas = distancia_km / velocidade;
     long long tempo_dias = tempo_horas / 24;
