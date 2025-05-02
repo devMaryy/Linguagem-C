@@ -8,10 +8,8 @@ int main (void)
 {
     int M, N;
     
-    // Leitura contínua até EOF
     while (scanf("%d %d", &M, &N) != EOF) 
     {
-        // Calcular a soma dos fatoriais
         long long soma;
         soma = fatorial(M) + fatorial(N);
 
