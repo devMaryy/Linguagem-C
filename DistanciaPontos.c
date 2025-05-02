@@ -13,11 +13,9 @@ int main (void)
 {
     TPonto p1, p2;
 
-    // Lê os pontos
     scanf("%lf %lf", &p1.x, &p1.y);
     scanf("%lf %lf", &p2.x, &p2.y);
 
-    // Calcula e imprime a distância com 4 casas decimais
     printf("%.4lf\n", distPontos2d(p1, p2));
 
     return 0;
