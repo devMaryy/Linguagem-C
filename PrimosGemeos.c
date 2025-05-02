@@ -17,8 +17,7 @@ int main(void)
     {
         if (eh_primo(i)) 
         {
-            // Verifica se a diferença entre dois primos consecutivos é 2 (primos gêmeos)
-            // Atualiza o par resposta com o último par encontrado até N
+
             if (ultimo_primo != -1 && i - ultimo_primo == 2) 
             {
                 resposta1 = ultimo_primo;
@@ -41,7 +40,6 @@ bool eh_primo(int num)
     if (num == 2) return true;
     if (num % 2 == 0) return false;
 
-    // Testa divisibilidade até a raiz quadrada de num, otimizando a verificação
     for (int i = 3; i <= sqrt(num); i += 2) 
     {
         if (num % i == 0) return false;
