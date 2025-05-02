@@ -6,27 +6,23 @@ int fatorial(int n);
 
 int main (void) 
 {
-    char ACM[10]; // Vetor para armazenar o número ACM como string (até 5 dígitos + segurança extra)
+    char ACM[10]; 
 
-    // Loop infinito para processar cada número até que "0" seja lido
     while (1) {
-        scanf("%s", ACM); // Lê o número como string
+        scanf("%s", ACM);
 
-        // Se o número for "0", termina a execução
         if (strcmp(ACM, "0") == 0)
             break;
 
-        int len = strlen(ACM); // Calcula o comprimento da string (quantidade de dígitos)
+        int len = strlen(ACM); 
         int result = 0;
 
-        // Percorre cada dígito da esquerda para a direita
         for (int i = 0; i < len; i++) {
-            int digito = ACM[i] - '0';      // Converte caractere para número
-            int pos = len - i;              // Posição do dígito da direita para esquerda (1-based)
-            result += digito * fatorial(pos); // Soma o produto do dígito com seu fatorial
+            int digito = ACM[i] - '0';      
+            int pos = len - i;         
+            result += digito * fatorial(pos);
         }
 
-        // Imprime o result convertido para decimal
         printf("%d\n", result);
     }
 
