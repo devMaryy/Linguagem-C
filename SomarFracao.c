@@ -10,16 +10,13 @@ int main(void)
     printf("Digite os 4 numeros: ");
     scanf("%d %d %d %d", &a, &b, &c, &d);
 
-    // Soma das frações: (a/b) + (c/d) = (a*d + c*b) / (b*d)
     numerador = a * d + c * b;
     denominador = b * d;
 
-    // Simplificar a fração dividindo pelo MDC
     divisor = mdc(numerador, denominador);
     numerador /= divisor;
     denominador /= divisor;
 
-    // Saída: numerador e denominador da fração irredutível
     printf("%d %d\n", numerador, denominador);
 
     return 0;
