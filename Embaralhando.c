@@ -12,13 +12,11 @@ int main (void)
     {
         scanf("%s", S);  
         
-        // Caso o string seja "0", termina a execução
         if (strcmp(S, "0") == 0) 
         {
             break;
         }
         
-        // O número de anagramas é o fatorial do número de caracteres da string
         int n = strlen(S);
         printf("%lld\n", fatorial(n));  
     }
