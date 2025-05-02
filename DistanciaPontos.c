@@ -3,7 +3,8 @@
 #include <stdio.h>
 #include <math.h>
 
-typedef struct {
+typedef struct 
+{
     double x, y;
 } TPonto;
 
