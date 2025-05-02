@@ -22,7 +22,6 @@ int main (void)
             quantidade_exclama++; 
         }
         
-        // Calcula o K-fatorial de numero com base na quantidade de exclamações
         long long resultado_k_fatorial = calcular_k_fatorial(numero, quantidade_exclama);
         
         printf("%lld\n", resultado_k_fatorial);
