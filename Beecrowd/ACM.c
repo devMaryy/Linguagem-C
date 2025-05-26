@@ -1,4 +1,5 @@
 // Beecrowd 1429
+
 #include <stdio.h>
 #include <string.h>
 
